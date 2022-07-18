@@ -19,7 +19,7 @@ export default function Navbar() {
                 <div className={styles.divider}>
                     <div className={styles.version_type}>
                         Residential
-                        <Image className={styles.pic} src={arrow_down} alt="down arrow" width='24px' height='24px' layout='fixed'/>
+                        <Image className={styles.pic} src={arrow_down} alt="down arrow" width='20px' height='20px' layout='fixed'/>
                     </div>
                 </div>
             </div>
@@ -30,21 +30,21 @@ export default function Navbar() {
                         <div className={styles.link}>
                         Explore
                         </div>
-                        <Image src={arrow_down} alt="down arrow" width='24px' height='24px' layout='fixed'/>
+                        <Image src={arrow_down} alt="down arrow" width='34px' height='24px' layout='fixed'/>
                     </div>
                     
                     <div className={styles.nav_links}>
                         <div className={styles.link}>
                             Contact
                         </div>
-                        <Image src={arrow_down} alt="down arrow" width='24px' height='24px' layout='fixed'/>
+                        <Image src={arrow_down} alt="down arrow" width='34px' height='24px' layout='fixed'/>
                     </div>
 
                     <div className={styles.nav_links}>
                         <div className={styles.link}>
                             My Account
                         </div>
-                        <Image src={arrow_down} alt="down arrow" width='24px' height='24px' layout='fixed'/>
+                        <Image src={arrow_down} alt="down arrow" width='34px' height='24px' layout='fixed'/>
                     </div>
 
                     <Image src={search} alt="search icon" width='30px' height='30px' layout='fixed'/>
