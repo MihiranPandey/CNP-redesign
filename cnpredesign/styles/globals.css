@@ -2,9 +2,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 700;
+  font-family: 'proxima-nova';
+  /* font-style: normal; */
+  font-weight: 600;
+  color: #000000;
 }
 
 a {
