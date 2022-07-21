@@ -16,3 +16,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.background_image {
+  width: 10px;
+}
