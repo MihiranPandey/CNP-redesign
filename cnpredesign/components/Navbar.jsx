@@ -18,8 +18,8 @@ export default function Navbar() {
                 </div>
                 <div className={styles.divider}>
                     <div className={styles.version_type}>
-                        Residential
-                        <Image className={styles.pic} src={arrow_down} alt="down arrow" width='20px' height='20px' layout='fixed'/>
+                        RESIDENTIAL
+                        <Image className={styles.pic} src={arrow_down} alt="down arrow" width='25px' height='20px' layout='fixed'/>
                     </div>
                 </div>
             </div>
