@@ -1,0 +1,70 @@
+.services {
+    padding: 0px 64px 187.5px 64px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+}
+
+.service_list { 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.electric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.desc {
+    width: 450px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    padding: 43px 0px 43px 0px;
+
+}
+
+.gas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: #FFFFFF;
+    height: 44px;
+    width: 193px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    background: #0074AD;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

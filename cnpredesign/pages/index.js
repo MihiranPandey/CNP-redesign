@@ -3,11 +3,12 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Mast from '../components/Mast'
+import Services from '../components/Services'
 import background_design from '../public/assets/background_designs.svg'
 import * as contentful from "contentful"
 
 
-export default function Home({mastdata}) {
+export default function Home({mastdata, electric, gas, home}) {
   return (
     <div className="container">
       <Head>
@@ -18,6 +19,7 @@ export default function Home({mastdata}) {
       </Head>
       <Navbar/>
       <Mast data={mastdata}/>
+      <Services electric={electric} gas={gas} home={home}/>
       {/* <Image className={styles.background_image} src={background_design} alt="background image" width='1725px' height='6613px' layout='responsive'/> */}
       <Footer/>
     </div>
@@ -33,11 +35,18 @@ export async function getStaticProps() {
   })
 
   // Get data from CMS
-  const data = await client.getEntry('5SaigJBYREj62KPY3gzyMp')
+  const mastdata = await client.getEntry('5SaigJBYREj62KPY3gzyMp')
+  const service_electric_data = await client.getEntry('sqnDqE0lVVrofUxAefd6Y')
+  const service_gas_data = await client.getEntry('2tVX6iJvJqGTMctFN70DgI')
+  const service_home_data = await client.getEntry('3Xr6DWR2kZ1WZFwIYVhh0N')
+
 
   return {
       props: {
-          mastdata: data
+          mastdata: mastdata,
+          electric: service_electric_data,
+          gas: service_gas_data,
+          home: service_home_data,
       }
   }
 }
