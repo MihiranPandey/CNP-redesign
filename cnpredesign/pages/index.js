@@ -4,11 +4,12 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Mast from '../components/Mast'
 import Services from '../components/Services'
+import Cost from '../components/Cost'
 import background_design from '../public/assets/background_designs.svg'
 import * as contentful from "contentful"
 
 
-export default function Home({mastdata, electric, gas, home}) {
+export default function Home({mastdata, electric, gas, home, cost}) {
   return (
     <div className="container">
       <Head>
@@ -20,6 +21,7 @@ export default function Home({mastdata, electric, gas, home}) {
       <Navbar/>
       <Mast data={mastdata}/>
       <Services electric={electric} gas={gas} home={home}/>
+      <Cost cost={cost}/>
       {/* <Image className={styles.background_image} src={background_design} alt="background image" width='1725px' height='6613px' layout='responsive'/> */}
       <Footer/>
     </div>
@@ -39,6 +41,7 @@ export async function getStaticProps() {
   const service_electric_data = await client.getEntry('sqnDqE0lVVrofUxAefd6Y')
   const service_gas_data = await client.getEntry('2tVX6iJvJqGTMctFN70DgI')
   const service_home_data = await client.getEntry('3Xr6DWR2kZ1WZFwIYVhh0N')
+  const cost_data = await client.getEntry('1HrVmmA3XqHFiRmh3XvpvW')
 
 
   return {
@@ -47,6 +50,7 @@ export async function getStaticProps() {
           electric: service_electric_data,
           gas: service_gas_data,
           home: service_home_data,
+          cost: cost_data,
       }
   }
 }
