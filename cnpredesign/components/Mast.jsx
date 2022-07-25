@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from 'next/image';
-import Button from './Button.jsx'
+import Image from 'next/image'
 import styles from './Mast.module.css'
 
 
@@ -15,7 +14,9 @@ export default function Mast({data}) {
         <div className={styles.subheader}>
           {desc}
         </div>
-        <Button/>
+        <div className={styles.button}>
+          LEARN MORE
+        </div>
 
       </div>
       <Image className={styles.pic}
