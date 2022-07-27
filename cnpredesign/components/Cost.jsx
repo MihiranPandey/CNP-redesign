@@ -10,7 +10,7 @@ const {title ,desc, pic} = cost.fields;
         Complete Cost Transparency
         <div className={styles.subheading}>
             We want to make energy as affordable as possible for our customers. 
-            Feel confident in what you pay by utilizing our budgeting tools and resources, 
+            Feel confident in what you pay <br/> by utilizing our budgeting tools and resources, 
             all with transparent pricing from us.
         </div>
         <div className={styles.pic}>

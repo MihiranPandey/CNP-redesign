@@ -1,9 +1,13 @@
 .cost_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     font-weight: 700;
     font-size: 60px;
-    padding: 0px 170px 211px 200px;
+    padding: 300px 170px 0px 200px;
+    height: 1231px;
 }
 
 .subheading {

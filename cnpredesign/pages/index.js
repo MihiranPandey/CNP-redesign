@@ -5,11 +5,12 @@ import Footer from '../components/Footer'
 import Mast from '../components/Mast'
 import Services from '../components/Services'
 import Cost from '../components/Cost'
+import Outage from '../components/Outage'
 import background_design from '../public/assets/background_designs.svg'
 import * as contentful from "contentful"
 
 
-export default function Home({mastdata, electric, gas, home, cost}) {
+export default function Home({mastdata, electric, gas, home, cost, outage, sustainability}) {
   return (
     <div className="container">
       <Head>
@@ -18,11 +19,13 @@ export default function Home({mastdata, electric, gas, home, cost}) {
           CNP Redesign
         </title> 
       </Head>
-      <Navbar/>
-      <Mast data={mastdata}/>
-      <Services electric={electric} gas={gas} home={home}/>
-      <Cost cost={cost}/>
-      {/* <Image className={styles.background_image} src={background_design} alt="background image" width='1725px' height='6613px' layout='responsive'/> */}
+      <div className="content">
+        <Navbar/>
+        <Mast data={mastdata}/>
+        <Services electric={electric} gas={gas} home={home}/>
+        <Cost cost={cost}/>
+        <Outage outage={outage}/>
+      </div>
       <Footer/>
     </div>
   )
@@ -42,7 +45,8 @@ export async function getStaticProps() {
   const service_gas_data = await client.getEntry('2tVX6iJvJqGTMctFN70DgI')
   const service_home_data = await client.getEntry('3Xr6DWR2kZ1WZFwIYVhh0N')
   const cost_data = await client.getEntry('1HrVmmA3XqHFiRmh3XvpvW')
-
+  const outage_tracker_data = await client.getEntry('3c4WhYDDaVHgSSOt813PjD')
+  const sustainable_data = await client.getEntry('7sxCfQzgZWxpJPeuE1wEbm')
 
   return {
       props: {
@@ -51,6 +55,8 @@ export async function getStaticProps() {
           gas: service_gas_data,
           home: service_home_data,
           cost: cost_data,
+          outage: outage_tracker_data,
+          sustainability: sustainable_data, 
       }
   }
 }
