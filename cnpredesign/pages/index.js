@@ -6,6 +6,8 @@ import Mast from '../components/Mast'
 import Services from '../components/Services'
 import Cost from '../components/Cost'
 import Outage from '../components/Outage'
+import Sustain from '../components/Sustain'
+import Assistance from '../components/Assistance'
 import background_design from '../public/assets/background_designs.svg'
 import * as contentful from "contentful"
 
@@ -25,6 +27,8 @@ export default function Home({mastdata, electric, gas, home, cost, outage, susta
         <Services electric={electric} gas={gas} home={home}/>
         <Cost cost={cost}/>
         <Outage outage={outage}/>
+        <Sustain sus={sustainability}/>
+        <Assistance/>
       </div>
       <Footer/>
     </div>
