@@ -17,3 +17,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.content {
+  background-image: url("/assets/background_designs.svg");
+  background-size: cover;
+}
