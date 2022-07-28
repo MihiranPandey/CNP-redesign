@@ -42,9 +42,8 @@ export default function Navbar() {
 
                     <div className={styles.nav_links}>
                         <div className={styles.link}>
-                            My Account
+                            Sustainability &nbsp;
                         </div>
-                        <Image src={arrow_down} alt="down arrow" width='34px' height='24px' layout='fixed'/>
                     </div>
 
                     <Image src={search} alt="search icon" width='30px' height='30px' layout='fixed'/>
