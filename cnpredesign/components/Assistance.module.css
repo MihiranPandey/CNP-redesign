@@ -1,7 +1,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 0px 334px 402px 334px;
+    padding: 250px 334px 460px 334px;
+    margin-bottom: -15px;
 }
 
 .title {
